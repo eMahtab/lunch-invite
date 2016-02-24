@@ -1,0 +1,33 @@
+{
+  "nodes":[
+            {"name":"Hyderabad Cuisine","group":0,"nodeNumber":0},
+			
+            {"name":"Deepthi","group":1,"nodeNumber":1},
+			{"name":"Divya","group":1,"nodeNumber":2},
+			{"name":"Prasoon","group":1,"nodeNumber":3},
+			{"name":"Harshita","group":1,"nodeNumber":4},
+			{"name":"Pradeepa","group":1,"nodeNumber":5},			
+			{"name":"Sreerekha","group":1,"nodeNumber":6},
+			{"name":"Awanish","group":1,"nodeNumber":7},
+			{"name":"Vardhan","group":1,"nodeNumber":8},
+			{"name":"Sharvari","group":1,"nodeNumber":9},			
+			{"name":"Pritish","group":1,"nodeNumber":10}
+			
+			
+		  ],
+		  
+  "links":[
+            {"source":1,"target":0,"value":1},
+			{"source":2,"target":0,"value":1},
+            {"source":3,"target":0,"value":1},
+            {"source":4,"target":0,"value":1},
+            {"source":5,"target":0,"value":1},
+            {"source":6,"target":0,"value":1},
+            {"source":7,"target":0,"value":1},
+			{"source":8,"target":0,"value":1},
+			{"source":9,"target":0,"value":1},
+			{"source":10,"target":0,"value":1}			
+           			
+          ]			
+
+}		  

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Life is short Eat Dessert first !!! Yup</title>
+        <link rel="icon" href="favicon.png" type="image/x-icon">
+    </head>
+<body>
+<script src="invite.min.js"></script>
+<script>
+var width=1300,height=645,svg=d3.select("body").append("svg").attr("width",width).attr("height",height),colorScale=d3.scale.linear().range(["green","darkgreen"]),force=d3.layout.force().gravity(.05).charge(-1e3).linkDistance(200).size([width,height]);d3.json("party.json",function(t,a){if(t)throw t;force.nodes(a.nodes).links(a.links).start();var e=svg.selectAll(".link").data(a.links).enter().append("line").attr("class","link"),r=svg.selectAll(".node").data(a.nodes).enter().append("g").attr("class","node").call(force.drag);r.append("image").attr("class","circle").attr("xlink:href",function(t){return"Divya"==t.name?"Divya.png":"Deepthi"==t.name?"deepthi.png":"Prasoon"==t.name?"prasoon.png":"Sreerekha"==t.name?"sree.png":"Awanish"==t.name?"awanish.jpg":"Vardhan"==t.name?"vardhan.PNG":"Pritish"==t.name?"pritish.png":"Sharvari"==t.name?"sharvari.png":"Pradeepa"==t.name?"pradeepa.jpg":"Harshita"==t.name?"harshita.png":""}).attr("x","-10px").attr("y","-5px").attr("width","100px").attr("height","100px"),r.append("title").text(function(t){return t.name}),force.on("tick",function(){e.attr("x1",function(t){return t.source.x}).attr("y1",function(t){return t.source.y}).attr("x2",function(t){return t.target.x}).attr("y2",function(t){return t.target.y}).attr("stroke",function(){return colorScale(Math.random())}).attr("stroke-width",2),r.attr("transform",function(t){return"translate("+t.x+","+t.y+")"})})});
+</script>    
+</body>
+</html>
